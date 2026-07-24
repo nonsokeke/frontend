@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Opportunities Connect Frontend
+
+Frontend for the Stetson University Professional Network, built with Next.js and TypeScript.  
+The app helps students and alumni connect, browse opportunities, and manage profile and approval workflows.
+
+## Features
+
+- Authentication (signup/login) with role-aware UI behavior
+- Alumni directory with search and pagination
+- Opportunities listing with search and filtering
+- User profile view and direct messaging support
+- Admin-only approval screens for users and opportunities
+
+## Tech Stack
+
+- Next.js 14 (App Router)
+- React 18 + TypeScript
+- Tailwind CSS
+- Radix UI + shadcn/ui components
+- Lucide icons
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- npm
+
+### Install and run
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` — start development server
+- `npm run build` — create production build
+- `npm run start` — run production server
+- `npm run lint` — run Next.js ESLint checks
+- `npm run deploy` — run the repository's deploy script
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+- `/app` — Next.js routes and layouts
+- `/components` — reusable UI and feature components
+- `/lib` — API calls, global state provider, and utilities
+- `/hooks` — custom React hooks
+- `/public` — static assets
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Backend Integration
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+API requests are defined in `/lib/api.ts` and currently point to a configured backend base URL in that file.
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Create a branch
+2. Make changes
+3. Run `npm run lint`
+4. Open a pull request
